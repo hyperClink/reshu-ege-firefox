@@ -1,0 +1,33 @@
+{
+  "name": "Инструменты и Ответы для Решу ЕГЭ",
+  "version": "2.1.2",
+  "description": "Показывает решения к вариантам Решу ЕГЭ/ОГЭ, позволяет заморозить таймер, выставить любое время.",
+  "manifest_version": 2,
+
+  "permissions": [
+          "activeTab"
+        ],
+
+  "content_scripts": [{
+    "js": ["content.js"],
+    "matches": ["*://*.sdamgia.ru/test?id*"]
+  }],
+
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+        "16": "tools16.png",
+        "32": "tools32.png",
+        "48": "tools48.png",
+        "128": "tools128.png"
+      },
+    "show_matches": ["*://*.sdamgia.ru/test?id*"]
+  },
+
+  "icons": {
+      "16": "tools16.png",
+      "32": "tools32.png",
+      "48": "tools48.png",
+      "128": "tools128.png"
+    }
+}

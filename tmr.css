@@ -1,0 +1,7 @@
+/***** These are to edit the thumb and the text inside the thumb *****/
+input[type=range] + .thumb {
+  display: none;
+}
+input[type=range] + .thumb.active .value {
+  display: none;
+}
